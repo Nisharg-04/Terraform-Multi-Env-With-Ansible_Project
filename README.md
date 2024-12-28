@@ -721,6 +721,40 @@ This is the final step to ensure that you have a well-managed infrastructure set
 **Note:** Be cautious when running `terraform destroy` as it will remove all resources, and data in your infrastructure will be lost. Always ensure that you’ve backed up any important data before performing the destruction.
 
 ---
+---
+### **Final Automation Scripts**
+
+I have created 2 through with you can create and configure entire infra and can destroy entire infra.
+
+1. **complete-project.sh**
+
+     * You can execute this script to execute your entire project in one go
+   
+```bash
+chmod +x complete-project.sh
+```
+
+```bash
+./complete-project
+```
+  
+       
+2. **cleanup.sh**
+
+
+     * You can execute this script to destroy all the infra created in this project
+   
+```bash
+chmod +x complete-project.sh
+```
+
+```bash
+./complete-project
+```
+  
+
+
+---
 
 
 ### **Conclusion of the Project**
