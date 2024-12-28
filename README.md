@@ -506,9 +506,9 @@ You can add an `index.html` file under the `nginx-role/files/` directory. This f
 
 ---
 
-# 8\. To add the `update_inventories.sh` script to your Ansible directory and integrate it with your existing setup, follow these steps:
+# 8\. To add the `update_inventory.sh` script to your Ansible directory and integrate it with your existing setup, follow these steps:
 
-### **Step 1: Create the** `update_inventories.sh` Script
+### **Step 1: Create the** `update_inventory.sh` Script
 
 In your `ansible` directory, create a new file named `update_inventories.sh` with the following content. This script will dynamically update the inventory files for **dev**, **stg**, and **prod** environments based on the IPs fetched from the Terraform outputs.
 
@@ -640,6 +640,8 @@ This will execute the playbook using the updated **all(dev,stg,prod)** inventory
 ```css
 .
 ├── README.md
+├── cleanup.sh
+├── complete-project.sh
 ├── ansible
 │   ├── inventories
 │   │   ├── dev
@@ -719,6 +721,7 @@ This is the final step to ensure that you have a well-managed infrastructure set
 **Note:** Be cautious when running `terraform destroy` as it will remove all resources, and data in your infrastructure will be lost. Always ensure that you’ve backed up any important data before performing the destruction.
 
 ---
+
 
 ### **Conclusion of the Project**
 
